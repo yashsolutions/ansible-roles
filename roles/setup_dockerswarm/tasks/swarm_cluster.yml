@@ -39,7 +39,7 @@
 
 - name: Declare the address of the first Swarm manager as a fact.
   set_fact:
-    docker_manager_address: "192.168.185.13:{{ docker_swarm_port }}"
+    docker_manager_address: "{{ docker_swarm_addr }}:{{ docker_swarm_port }}"
   when: "inventory_hostname == groups['docker_swarm_manager'][0]"
 
 - name: Distribute the fact containing address of the first Swarm manager.
