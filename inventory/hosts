@@ -5,19 +5,20 @@ openvpn.ip
 jenkins.ip
 
 [docker_engine]
-internal-swarm-01.ip
-internal-swarm-02.ip
+192.168.185.13
+192.168.185.11
+192.168.185.4
 internal-swarm-03.ip
 #internal-swarm-04.ip
 #internal-swarm-05.ip
 #internal-swarm-06.ip
 
 [docker_swarm_manager]
-internal-swarm-01.ip
+192.168.185.13
 
 [docker_swarm_worker]
-internal-swarm-02.ip
-internal-swarm-03.ip
+192.168.185.11
+192.168.185.4
 #internal-swarm-04.ip
 #internal-swarm-05.ip
 #internal-swarm-06.ip
@@ -34,17 +35,16 @@ prod-swarm-01
 prod-swarm-02
 
 [elasticsearch]
-internal-es-01.ip
+192.168.185.14
 
 [elasticsearch_master_nodes]
-internal-es-01.ip
+192.168.185.14
 
 [elasticsearch_master_data_nodes]
-internal-es-01.ip
+192.168.185.14
 
 [elasticsearch_data_nodes]
-internal-es-01.ip
-internal-es-02.ip
+192.168.185.14
 #internal-es-03.ip
 
 [qa_elasticsearch]
