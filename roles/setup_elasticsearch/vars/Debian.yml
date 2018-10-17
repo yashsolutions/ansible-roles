@@ -1,3 +1,3 @@
 java: "{{ es_java | default('default-jdk') }}"
-default_file: "/etc/sysconfig/elasticsearch"
+default_file: "/etc/default/elasticsearch"
 es_home: "/usr/share/elasticsearch"
