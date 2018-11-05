@@ -1,4 +1,4 @@
-- hosts: 192.168.185.8
+- hosts: 192.168.185.13
   tasks:
   - name: cleanup containers
     command: bash -c 'docker rm -v $(docker ps -a -f status=exited -q)'
