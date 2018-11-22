@@ -8,7 +8,7 @@
 
 - name: login into docker registry
   when: docker_registry_login 
-  shell: "$(aws ecr get-login --region us-east-2)"
+  shell: docker login -u {{ docker_registry_user }} -p {{ docker_registry_pass }} {{ docker_registry_name }}
 
 - name: get available services
   command: docker service list
