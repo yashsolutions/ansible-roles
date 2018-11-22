@@ -1,4 +1,4 @@
-- hosts: elasticsearch
+- hosts: elastic1
   become: true
   roles:
     - { role: setup_elasticsearch, es_instance_name: "internal-es-01", es_config: { discovery.zen.ping.unicast.hosts: "192.168.185.14", network.host: "0.0.0.0", cluster.name: "internal-es", http.port: 9200, transport.tcp.port: 9300, node.data: true, node.master: true } }
