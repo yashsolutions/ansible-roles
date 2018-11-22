@@ -1,6 +1,6 @@
 docker1 ansible_host=192.168.185.6
 docker2 ansible_host=192.168.185.3
-elasticsearch ansible_host=192.168.185.14
+elastic1 ansible_host=192.168.185.14
 
 [docker_engine]
 docker1
@@ -13,13 +13,13 @@ docker1
 docker2
 
 [elasticsearch]
-elasticsearch
+elastic1
 
 [elasticsearch_master_nodes]
-elasticsearch
+elastic1
 
 [elasticsearch_master_data_nodes]
-elasticsearch
+elastic1
 
 [elasticsearch_data_nodes]
-elasticsearch
+elastic1
