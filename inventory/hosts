@@ -1,37 +1,12 @@
-ansible.ip
-gerrit.ip
-openldap.ip
-openvpn.ip
-jenkins.ip
-
 [docker_engine]
-192.168.185.13
-192.168.185.11
-192.168.185.4
-#internal-swarm-04.ip
-#internal-swarm-05.ip
-#internal-swarm-06.ip
+192.168.185.3
+192.168.185.6
 
 [docker_swarm_manager]
-192.168.185.13
+192.168.185.6
 
 [docker_swarm_worker]
-192.168.185.11
-192.168.185.4
-#internal-swarm-04.ip
-#internal-swarm-05.ip
-#internal-swarm-06.ip
-
-[prod_docker_engine]
-prod-swarm-01
-prod-swarm-02
-
-[prod_docker_swarm_manager]
-prod-swarm-01
-
-[prod_docker_swarm_worker]
-prod-swarm-01
-prod-swarm-02
+192.168.185.3
 
 [elasticsearch]
 192.168.185.14
@@ -44,22 +19,3 @@ prod-swarm-02
 
 [elasticsearch_data_nodes]
 192.168.185.14
-#internal-es-03.ip
-
-[qa_elasticsearch]
-qa-elasticsearch-01
-
-[qa_elasticsearch_master_nodes]
-qa-elasticsearch-01
-
-[qa_elasticsearch_data_nodes]
-qa-elasticsearch-01
-
-[prod_elasticsearch]
-prod-elasticsearch-01
-
-[prod_elasticsearch_master_nodes]
-prod-elasticsearch-01
-
-[prod_elasticsearch_data_nodes]
-prod-elasticsearch-01
