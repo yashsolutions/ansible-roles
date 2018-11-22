@@ -10,6 +10,7 @@
 # Makes sure that the repo cache is fresh
 - name: Update APT cache
   apt: update_cache=yes
+  cache_valid_time: 86400
   when: ansible_os_family == 'Debian'
   changed_when: false
 
