@@ -8,7 +8,7 @@
 
 - name: login into docker registry
   when: docker_registry_login 
-  shell: docker login -u {{ docker_registry_user }} -p {{ docker_registry_pass }} {{ docker_registry_name }}
+  shell: docker login -u {{ docker_registry.user }} -p {{ docker_registry.pass }} {{ docker_registry.name }}
 
 - name: get available services
   command: docker service list
