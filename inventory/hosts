@@ -1,21 +1,25 @@
+docker1 ansible_host=192.168.185.6
+docker2 ansible_host=192.168.185.3
+elasticsearch ansible_host=192.168.185.14
+
 [docker_engine]
-192.168.185.3
-192.168.185.6
+docker1
+docker2
 
 [docker_swarm_manager]
-192.168.185.6
+docker1
 
 [docker_swarm_worker]
-192.168.185.3
+docker2
 
 [elasticsearch]
-192.168.185.14
+elasticsearch
 
 [elasticsearch_master_nodes]
-192.168.185.14
+elasticsearch
 
 [elasticsearch_master_data_nodes]
-192.168.185.14
+elasticsearch
 
 [elasticsearch_data_nodes]
-192.168.185.14
+elasticsearch
