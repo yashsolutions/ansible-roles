@@ -1,6 +1,7 @@
 docker1 ansible_host=192.168.185.6
 docker2 ansible_host=192.168.185.3
 elastic1 ansible_host=192.168.185.14
+jenkins ansible_host=192.168.185.9
 
 [docker_engine]
 docker1
