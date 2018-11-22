@@ -1,5 +1,5 @@
 ---
 
-- hosts: internal-swarm-01.ip
+- hosts: docker1
   roles:
   - deploy_to_swarm
